@@ -1,0 +1,170 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #f4a261;
+    --color-black: #264653;
+    --color-black-1: #212b38;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    min-height: 100vh;
+  }
+  .header {
+    background-color: #002147;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+  /* .hero {
+    height: calc(100vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: initial;
+  } */
+  .container{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+  }
+  .box {
+      width: 270;
+      height: 270;
+      
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      line-height: 270px;
+      border-radius: 20px;
+      margin: 10px;
+      
+  }
+
+  .box:hover{
+      opacity: 0.5;
+      cursor: pointer;
+  }
+
+  #box1 {
+       background-color: #f94144;
+    }
+  #box2 {
+       background-color: #f3722c;
+   }
+  #box3 {
+    background-color: #f94144;
+   }
+  #box4 {
+    background-color: #f3722c;
+   }
+  #box5 {
+    background-color: #f94144;
+   }
+  #box6 {
+    background-color: #f3722c;
+    }
+  #box7 {
+    background-color: #f94144;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+  .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .upload{
+      text-align: center;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #ad3027;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+  .logout{
+    margin: 30px 0;
+  }
+  .logout ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+  }
+  .logout ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button.view {
+    background-color: green;
+    color: white;
+}
+
+button.info {
+    background-color: blue;
+    color: white;
+}
+
+button.edit {
+    background-color: orange;
+    color: white;
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+}

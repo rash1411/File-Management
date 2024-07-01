@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #002147;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .register {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub {
+            text-align: right;
+            justify-content: center;
+        }
+
+        form input,
+        form select,
+        form button {
+            font-size: 14px;
+            width: 51%;
+            padding: 14px;
+            margin: 10px 0;
+            position: relative;
+            text-align: center;
+            display: inline-block;
+        }
+
+        form button {
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #4cae4c;
+        }
+
+        .footer {
+            position: relative;
+            border-bottom: 0cm;
+            bottom: 0;
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+            position: relative;
+            align-items: flex-end;
+        }
+
+        .logout {
+            margin: 10px 0;
+        }
+
+        .logout ul {
+            display: flex;
+            justify-content: right;
+            list-style-type: none;
+        }
+
+        .logout ul li a{
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header"><img src="drdo-logo.png" alt="DRDO Logo">
+        <h1>Centre for Fire, Explosive and Environment Safety (CFEES)<br>
+            अग्नि, विस्फोटक और पर्यावरण सुरक्षा केंद्र (सीएफईईएस)
+        </h1>
+        <img src="drdo-logo.png" alt="DRDO Logo">
+    </div>
+
+
+    <div class="register">
+        <!-- <div class="sub"><h2>Upload File</h2></div> -->
+        <form id="upload-form" method="POST" action="upload.php" enctype="multipart/form-data">
+            <div class="sub"><label for="category">Category of circular:</label>
+                <select id="category" name="category_id" required>
+                    <option value="">-- options --</option>
+                    <option value="1">IT Audit</option>
+                    <option value="2">Antivirus</option>
+                    <option value="3">Windows OS Security</option>
+                    <option value="4">Ubuntu OS Security</option>
+                    <option value="5">IT Hardware Security</option>
+                    <option value="6">IT Software Security</option>
+                    <option value="7">Others</option>
+                </select>
+            </div>
+            <div class="sub">
+                <label for="Subject">Subject/Title:</label>
+                <input type="text" name="" id="1">
+            </div>
+            <div class="sub">
+                <label for="Letter number">Letter number:</label>
+                <input type="number" name="" id="">
+            </div>
+            <div class="sub">
+                <label for="Letter date">Letter date:</label>
+                <input type="date" name="" id="">
+            </div>
+            <div class="sub">
+                <label for="Letter recieved from">Recieved from:</label>
+                <input type="text" name="" id="1">
+            </div>
+            <div class="sub">
+                <label for="Remarks">Remarks:</label>
+                <textarea name="Remarks" id="" cols="25" rows="9">Enter Remarks if any. </textarea>
+            </div>
+
+            
+
+            <div class="sub" id="choose">
+                <input type="file" name="file" required>
+                <button type="submit">Upload</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="footer">
+        <h2>Designed and maintained by QRS&IT group.</h2>
+        <div class="logout">
+            <ul>
+                <li><a href="logout.php">logout</a> <span>|</span> </li>
+                <li><a href="viewpage.php">back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
